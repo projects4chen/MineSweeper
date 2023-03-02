@@ -136,7 +136,7 @@ void Mine::left_click(unsigned int row, unsigned int col) {
     // 第一次如果不是空白，重新生成棋盘
     if (first_click_flag) {
         while (board[row][col] != 0) {
-            print_board();
+//             print_board();
             rebuild(n_rows, n_cols, proportion);
         }
         first_click_flag = false;
